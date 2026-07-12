@@ -1,0 +1,1421 @@
+{
+  "exbVersion": "1.20.0",
+  "mainSizeMode": "LARGE",
+  "mainLocale": "en",
+  "theme": "themes/dark/",
+  "utilities": {},
+  "customTheme": {},
+  "customThemeOptions": {},
+  "forBuilderAttributes": {},
+  "template": "chronology",
+  "useAutoSortInFixedLayout": false,
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "Snake River GRP Field Map",
+      "itemId": "9bef58c2603d422ab6e0e24e01d1ced0",
+      "portalUrl": "https://wrienviro.maps.arcgis.com",
+      "isHidden": false,
+      "childDataSourceJsons": {
+        "SNK_sites": {
+          "id": "dataSource_1-SNK_sites",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Strategy Sites",
+          "portalUrl": "https://wrienviro.maps.arcgis.com",
+          "itemId": "61f1fd6c7840445a9b203f808bc86125",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Strategy_Sites_pub/FeatureServer/0"
+        }
+      }
+    },
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_MAP",
+      "sourceLabel": "Snake River GRP ICP Hazards Map",
+      "itemId": "10943f73c7d448d5b785dd40748ad9a5",
+      "portalUrl": "https://wrienviro.maps.arcgis.com",
+      "isHidden": false,
+      "childDataSourceJsons": {
+        "ICP_hazards": {
+          "id": "dataSource_2-ICP_hazards",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Hazards",
+          "portalUrl": "https://wrienviro.maps.arcgis.com",
+          "itemId": "7aaf2dfdef604fdeb0af0627685a3eac",
+          "layerId": "9",
+          "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/Snake_River_GRP_Test_v2/FeatureServer/9"
+        }
+      }
+    }
+  },
+  "pages": {
+    "page_1": {
+      "id": "page_1",
+      "label": "Sites & COP",
+      "type": "NORMAL",
+      "mode": "FIT_WINDOW",
+      "layout": {
+        "LARGE": "layout_p1",
+        "MEDIUM": "layout_p1",
+        "SMALL": "layout_p1"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "bodyBackgroundColor": "",
+      "header": true
+    },
+    "page_2": {
+      "id": "page_2",
+      "label": "Hazard Playbook",
+      "type": "NORMAL",
+      "mode": "FIT_WINDOW",
+      "layout": {
+        "LARGE": "layout_p2",
+        "MEDIUM": "layout_p2",
+        "SMALL": "layout_p2"
+      },
+      "isDefault": false,
+      "isVisible": true,
+      "bodyBackgroundColor": "",
+      "header": true
+    }
+  },
+  "pageStructure": [
+    {
+      "page_1": []
+    },
+    {
+      "page_2": []
+    }
+  ],
+  "layouts": {
+    "layout_p1": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "1",
+        "2",
+        "7",
+        "8"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_11",
+          "bbox": {
+            "left": "0px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "0px",
+            "width": "380px",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": false,
+              "width": "CUSTOM",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "388px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "0px",
+            "width": "100%",
+            "height": "55%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "STRETCH",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_13",
+          "bbox": {
+            "left": "388px",
+            "right": "0px",
+            "top": "56%",
+            "bottom": "0px",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "7": {
+          "type": "WIDGET",
+          "widgetId": "widget_15",
+          "bbox": {
+            "left": "0px",
+            "right": "10px",
+            "top": "10px",
+            "bottom": "0px",
+            "width": "300px",
+            "height": "48px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "CUSTOM",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "8": {
+          "type": "WIDGET",
+          "widgetId": "widget_17",
+          "bbox": {
+            "left": "396px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "45.8%",
+            "width": "292px",
+            "height": "52px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": true,
+              "bottom": false,
+              "width": "CUSTOM",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_p2": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "1",
+        "2"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "left": "0px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "0px",
+            "width": "380px",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": false,
+              "width": "CUSTOM",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {
+            "left": "388px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "0px",
+            "width": "100%",
+            "height": "55%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "STRETCH",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "bbox": {
+            "left": "388px",
+            "right": "0px",
+            "top": "56%",
+            "bottom": "0px",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_card": {
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_5",
+          "bbox": {
+            "left": "8px",
+            "right": "8px",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "lockParent": true,
+            "vCenter": true,
+            "hCenter": false,
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            }
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_card2": {
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_12",
+          "bbox": {
+            "left": "8px",
+            "right": "8px",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "lockParent": true,
+            "vCenter": true,
+            "hCenter": false,
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            }
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_ctrl": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "1",
+        "2"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_14",
+          "bbox": {},
+          "setting": {}
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {},
+          "setting": {}
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_16",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "label": "Controller layout"
+    },
+    "layout_hdr": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "1",
+        "2"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_18",
+          "bbox": {
+            "left": "801px",
+            "right": "36px",
+            "top": "2px",
+            "bottom": "0px",
+            "width": "187px",
+            "height": "64px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "CUSTOM",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_19",
+          "bbox": {
+            "left": "15px",
+            "right": "385px",
+            "top": "12px",
+            "bottom": "9px",
+            "width": "624px",
+            "height": "68.3%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": false,
+              "width": "CUSTOM",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": "0px",
+            "right": "12px",
+            "top": "12px",
+            "bottom": "12px",
+            "width": "48px",
+            "height": "40px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "CUSTOM",
+              "height": "STRETCH"
+            },
+            "vCenter": true,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    }
+  },
+  "sections": {},
+  "views": {},
+  "dialogs": {},
+  "messageConfigs": {
+    "messageConfig_1": {
+      "id": "messageConfig_1",
+      "widgetId": "widget_4",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_6-zoomToFeature-icp1",
+          "widgetId": "widget_6",
+          "messageWidgetId": "widget_4",
+          "actionName": "zoomToFeature",
+          "description": null,
+          "config": {
+            "useDataSource": null,
+            "useDataSources": [],
+            "goToInitialMapExtentWhenSelectionCleared": false,
+            "useAnyTriggerData": true
+          },
+          "version": "1.20.0"
+        }
+      ]
+    },
+    "messageConfig_2": {
+      "id": "messageConfig_2",
+      "widgetId": "widget_11",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_1-zoomToFeature-icp2",
+          "widgetId": "widget_1",
+          "messageWidgetId": "widget_11",
+          "actionName": "zoomToFeature",
+          "description": null,
+          "config": {
+            "useDataSource": null,
+            "useDataSources": [],
+            "goToInitialMapExtentWhenSelectionCleared": false,
+            "useAnyTriggerData": true
+          },
+          "version": "1.20.0"
+        }
+      ]
+    }
+  },
+  "widgets": {
+    "widget_1": {
+      "id": "widget_1",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.20.0",
+      "label": "COP Map",
+      "config": {
+        "initialMapDataSourceID": "dataSource_1",
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_2": {
+      "id": "widget_2",
+      "uri": "widgets/arcgis/legend/",
+      "version": "1.20.0",
+      "label": "Legend",
+      "config": {},
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_3": {
+      "id": "widget_3",
+      "uri": "widgets/common/menu/",
+      "version": "1.20.0",
+      "label": "Menu",
+      "config": {
+        "type": "drawer",
+        "menuStyle": "default",
+        "vertical": true,
+        "standard": {}
+      }
+    },
+    "widget_4": {
+      "id": "widget_4",
+      "uri": "widgets/common/list/",
+      "version": "1.20.0",
+      "label": "Hazard List",
+      "config": {
+        "maxItems": 50,
+        "space": 6,
+        "verticalSpace": 6,
+        "horizontalSpace": 10,
+        "itemsPerPage": 12,
+        "isItemStyleConfirm": true,
+        "isInitialed": true,
+        "pageStyle": "SCROLL",
+        "itemStyle": "STYLE6",
+        "hoverType": "HOVER0",
+        "selectedStyle": "STYLE0",
+        "differentOddEven": false,
+        "scrollBarOpen": true,
+        "direction": "VERTICAL",
+        "alignType": "CENTER",
+        "scrollStep": 2,
+        "cardConfigs": {
+          "DEFAULT": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 68
+              }
+            },
+            "enable": true,
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-divider-secondary)",
+                "width": "1px"
+              }
+            },
+            "listLayout": "Custom"
+          },
+          "HOVER": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 68
+              }
+            },
+            "enable": false,
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-divider-secondary)",
+                "width": "1px"
+              }
+            },
+            "listLayout": "Auto"
+          },
+          "SELECTED": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 68
+              }
+            },
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-action-selected)",
+                "width": "1px"
+              }
+            },
+            "selectionMode": "SINGLE",
+            "listLayout": "Auto"
+          }
+        },
+        "style": {
+          "id": "default"
+        },
+        "isCheckEmptyTemplate": false,
+        "searchOpen": true,
+        "searchFields": [
+          "hazard_id",
+          "hazard_name"
+        ],
+        "searchExact": false,
+        "searchHint": "Search hazards",
+        "filters": null,
+        "sorts": [
+          {
+            "ruleOptionName": "Priority",
+            "rule": [
+              {
+                "jimuFieldName": "tier",
+                "order": "ASC"
+              },
+              {
+                "jimuFieldName": "composite",
+                "order": "DESC"
+              }
+            ]
+          }
+        ],
+        "sortOpen": true,
+        "isShowAutoRefresh": false,
+        "layoutType": "ROW",
+        "keepAspectRatio": false
+      },
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_card",
+          "MEDIUM": "layout_card",
+          "SMALL": "layout_card"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-ICP_hazards",
+          "mainDataSourceId": "dataSource_2-ICP_hazards",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "hazard_id",
+            "hazard_name",
+            "tier",
+            "composite",
+            "category"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_5": {
+      "id": "widget_5",
+      "uri": "widgets/common/text/",
+      "version": "1.20.0",
+      "label": "Hazard Card Text",
+      "config": {
+        "text": "<p><span style=\"font-size:15px;font-weight:bold;\"><exp data-uniqueid=\"1a07860b6d4d\" data-dsid=\"dataSource_2-ICP_hazards\" data-expression=\"%7B%22name%22%3A%22%7Bhazard_id%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bhazard_id%7D%22%2C%22dataSourceId%22%3A%22dataSource_2-ICP_hazards%22%2C%22jimuFieldName%22%3A%22hazard_id%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{hazard_id}</exp> &mdash; <exp data-uniqueid=\"522174b547b5\" data-dsid=\"dataSource_2-ICP_hazards\" data-expression=\"%7B%22name%22%3A%22%7Bhazard_name%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bhazard_name%7D%22%2C%22dataSourceId%22%3A%22dataSource_2-ICP_hazards%22%2C%22jimuFieldName%22%3A%22hazard_name%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{hazard_name}</exp></span></p><p><span style=\"font-size:12px;color: var(--sys-color-surface-paper-hint);\">Tier <exp data-uniqueid=\"9a5b51bc348f\" data-dsid=\"dataSource_2-ICP_hazards\" data-expression=\"%7B%22name%22%3A%22%7Btier%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Btier%7D%22%2C%22dataSourceId%22%3A%22dataSource_2-ICP_hazards%22%2C%22jimuFieldName%22%3A%22tier%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{tier}</exp> &bull; score <exp data-uniqueid=\"8e9cc9e939b3\" data-dsid=\"dataSource_2-ICP_hazards\" data-expression=\"%7B%22name%22%3A%22%7Bcomposite%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bcomposite%7D%22%2C%22dataSourceId%22%3A%22dataSource_2-ICP_hazards%22%2C%22jimuFieldName%22%3A%22composite%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{composite}</exp> &bull; <exp data-uniqueid=\"e8190950d990\" data-dsid=\"dataSource_2-ICP_hazards\" data-expression=\"%7B%22name%22%3A%22%7Bcategory%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bcategory%7D%22%2C%22dataSourceId%22%3A%22dataSource_2-ICP_hazards%22%2C%22jimuFieldName%22%3A%22category%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{category}</exp></span></p>",
+        "placeholder": "",
+        "style": {
+          "verticalAlign": "center",
+          "wrap": true,
+          "overflow": "hidden",
+          "padding": "p-1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-ICP_hazards",
+          "mainDataSourceId": "dataSource_2-ICP_hazards",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "hazard_id",
+            "hazard_name",
+            "tier",
+            "composite",
+            "category"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_6": {
+      "id": "widget_6",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.20.0",
+      "label": "Playbook Map",
+      "config": {
+        "initialMapDataSourceID": "dataSource_2",
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": false,
+          "canNavigation": false
+        },
+        "isUseCustomMapState": false
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2",
+          "mainDataSourceId": "dataSource_2"
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_7": {
+      "id": "widget_7",
+      "uri": "widgets/arcgis/feature-info/",
+      "version": "1.20.0",
+      "label": "Hazard Detail",
+      "config": {
+        "useMapWidget": false,
+        "limitGraphics": true,
+        "maxGraphics": 10,
+        "noDataMessage": "Select a hazard from the list.",
+        "styleType": "usePopupDefined",
+        "style": {
+          "textColor": "",
+          "fontSizeType": "auto",
+          "fontSize": {
+            "distance": 14,
+            "unit": "px"
+          },
+          "backgroundColor": ""
+        },
+        "dsNavigator": false,
+        "featureNavigator": true,
+        "showCount": false,
+        "clearSelection": false,
+        "dsConfigs": [
+          {
+            "id": "dsConfig_0",
+            "label": "Hazards",
+            "useDataSourceId": "dataSource_2-ICP_hazards-selection",
+            "contentConfig": {
+              "title": true,
+              "fields": true,
+              "media": true,
+              "attachments": false,
+              "lastEditInfo": false
+            }
+          }
+        ]
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-ICP_hazards-selection",
+          "mainDataSourceId": "dataSource_2-ICP_hazards",
+          "rootDataSourceId": "dataSource_2",
+          "dataViewId": "selection"
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_11": {
+      "id": "widget_11",
+      "uri": "widgets/common/list/",
+      "version": "1.20.0",
+      "label": "Site List",
+      "config": {
+        "maxItems": 100,
+        "space": 6,
+        "verticalSpace": 6,
+        "horizontalSpace": 10,
+        "itemsPerPage": 25,
+        "isItemStyleConfirm": true,
+        "isInitialed": true,
+        "pageStyle": "SCROLL",
+        "itemStyle": "STYLE6",
+        "hoverType": "HOVER0",
+        "selectedStyle": "STYLE0",
+        "differentOddEven": false,
+        "scrollBarOpen": true,
+        "direction": "VERTICAL",
+        "alignType": "CENTER",
+        "scrollStep": 2,
+        "cardConfigs": {
+          "DEFAULT": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 68
+              }
+            },
+            "enable": true,
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-divider-secondary)",
+                "width": "1px"
+              }
+            },
+            "listLayout": "Custom"
+          },
+          "HOVER": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 68
+              }
+            },
+            "enable": false,
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-divider-secondary)",
+                "width": "1px"
+              }
+            },
+            "listLayout": "Auto"
+          },
+          "SELECTED": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 68
+              }
+            },
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-action-selected)",
+                "width": "1px"
+              }
+            },
+            "selectionMode": "SINGLE",
+            "listLayout": "Auto"
+          }
+        },
+        "style": {
+          "id": "default"
+        },
+        "isCheckEmptyTemplate": false,
+        "searchOpen": true,
+        "searchFields": [
+          "site_code",
+          "site_name"
+        ],
+        "searchExact": false,
+        "searchHint": "Search sites",
+        "filters": null,
+        "sorts": [
+          {
+            "ruleOptionName": "River Mile",
+            "rule": [
+              {
+                "jimuFieldName": "river_mile",
+                "order": "ASC"
+              }
+            ]
+          },
+          {
+            "ruleOptionName": "Site Code",
+            "rule": [
+              {
+                "jimuFieldName": "site_code",
+                "order": "ASC"
+              }
+            ]
+          }
+        ],
+        "sortOpen": true,
+        "isShowAutoRefresh": false,
+        "layoutType": "ROW",
+        "keepAspectRatio": false
+      },
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_card2",
+          "MEDIUM": "layout_card2",
+          "SMALL": "layout_card2"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-SNK_sites",
+          "mainDataSourceId": "dataSource_1-SNK_sites",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "site_code",
+            "site_name",
+            "river_mile",
+            "status",
+            "sector"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_12": {
+      "id": "widget_12",
+      "uri": "widgets/common/text/",
+      "version": "1.20.0",
+      "label": "Site Card Text",
+      "config": {
+        "text": "<p><span style=\"font-size:15px;font-weight:bold;\"><exp data-uniqueid=\"4da97aad0119\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Bsite_code%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bsite_code%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22site_code%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{site_code}</exp></span><span style=\"font-size:15px;\"> &mdash; <exp data-uniqueid=\"83ba470e1788\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Bsite_name%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bsite_name%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22site_name%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{site_name}</exp></span></p><p><span style=\"font-size:12px;color: var(--sys-color-surface-paper-hint);\">RM <exp data-uniqueid=\"c955a6fd8053\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Briver_mile%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Briver_mile%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22river_mile%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{river_mile}</exp> &bull; <exp data-uniqueid=\"f9b3e3765a46\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Bstatus%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bstatus%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22status%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{status}</exp> &bull; Sector <exp data-uniqueid=\"65302642d737\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Bsector%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bsector%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22sector%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{sector}</exp></span></p>",
+        "placeholder": "",
+        "style": {
+          "verticalAlign": "center",
+          "wrap": true,
+          "overflow": "hidden",
+          "padding": "p-1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-SNK_sites",
+          "mainDataSourceId": "dataSource_1-SNK_sites",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "site_code",
+            "site_name",
+            "river_mile",
+            "status",
+            "sector"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_13": {
+      "id": "widget_13",
+      "uri": "widgets/arcgis/feature-info/",
+      "version": "1.20.0",
+      "label": "Site Detail",
+      "config": {
+        "useMapWidget": false,
+        "limitGraphics": true,
+        "maxGraphics": 10,
+        "noDataMessage": "Select a site from the list.",
+        "styleType": "usePopupDefined",
+        "style": {
+          "textColor": "",
+          "fontSizeType": "auto",
+          "fontSize": {
+            "distance": 14,
+            "unit": "px"
+          },
+          "backgroundColor": ""
+        },
+        "dsNavigator": false,
+        "featureNavigator": true,
+        "showCount": false,
+        "clearSelection": false,
+        "dsConfigs": [
+          {
+            "id": "dsConfig_0",
+            "label": "Strategy Sites",
+            "useDataSourceId": "dataSource_1-SNK_sites-selection",
+            "contentConfig": {
+              "title": true,
+              "fields": true,
+              "media": true,
+              "attachments": true,
+              "lastEditInfo": false
+            }
+          }
+        ]
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-SNK_sites-selection",
+          "mainDataSourceId": "dataSource_1-SNK_sites",
+          "rootDataSourceId": "dataSource_1",
+          "dataViewId": "selection"
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_14": {
+      "id": "widget_14",
+      "uri": "widgets/spill-trace-snake/",
+      "version": "1.0.0",
+      "label": "Spill Trajectory (Snake)",
+      "config": {
+        "safetyFactor": 1.5,
+        "minStreamOrder": 4,
+        "maxHours": 24,
+        "maxDistanceKm": 300,
+        "listSyncSiteCodeField": "site_code",
+        "siteLayers": [
+          {
+            "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/Snake_River_GRP_Test_v2/FeatureServer/1",
+            "nameField": "site_name",
+            "bufferM": 500,
+            "where": "status <> 'rejected'",
+            "extraFields": [
+              "river_mile",
+              "strategy_type",
+              "GlobalID",
+              "site_code"
+            ],
+            "boomLayer": {
+              "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/Snake_River_GRP_Test_v2/FeatureServer/0",
+              "siteKeyField": "site_globalid"
+            }
+          }
+        ],
+        "receptorLayers": [
+          {
+            "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/Snake_River_Research_Map_WFL1/FeatureServer/16",
+            "nameField": "name",
+            "bufferM": 800
+          }
+        ],
+        "equipment": {
+          "enabled": true,
+          "entrainmentMs": 0.35,
+          "anchorSpacingFt": 100,
+          "reservePct": 20
+        }
+      },
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_15": {
+      "id": "widget_15",
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "label": "Map Tools",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": false,
+          "openStarts": [],
+          "displayType": "SIDEBYSIDE",
+          "vertical": false,
+          "size": {
+            "widget_2": {
+              "width": 320,
+              "height": 440
+            },
+            "widget_14": {
+              "width": 430,
+              "height": 620
+            },
+            "widget_16": {
+              "width": 380,
+              "height": 420
+            }
+          },
+          "arrangement": "floating"
+        },
+        "appearance": {
+          "space": 4,
+          "advanced": false,
+          "card": {
+            "showLabel": true,
+            "labelGrowth": 30,
+            "avatar": {
+              "type": "primary",
+              "size": "sm",
+              "shape": "rectangle",
+              "buttonSize": null,
+              "iconSize": null
+            }
+          }
+        }
+      },
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_ctrl",
+          "MEDIUM": "layout_ctrl",
+          "SMALL": "layout_ctrl"
+        }
+      }
+    },
+    "widget_16": {
+      "id": "widget_16",
+      "uri": "widgets/common/image/",
+      "version": "1.20.0",
+      "label": "Mobile App QR",
+      "config": {
+        "functionConfig": {
+          "altText": "QR code: Snake GRP mobile field app",
+          "toolTip": "Scan with a phone to open the Snake GRP mobile app",
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "value": "https://www.whitewaterrescue.com/snake_mobile",
+            "openType": "_blank"
+          },
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/qr_mobile.png",
+            "fileName": "qr_mobile.png",
+            "type": "IMAGE"
+          },
+          "imageFillMode": "FIT",
+          "imageDisplayQualityMode": "ORIGINAL"
+        },
+        "styleConfig": {}
+      }
+    },
+    "widget_17": {
+      "id": "widget_17",
+      "uri": "widgets/arcgis/bookmark/",
+      "version": "1.20.0",
+      "label": "Sectors",
+      "config": {
+        "templateType": "GALLERY",
+        "isTemplateConfirm": true,
+        "isInitialed": true,
+        "bookmarks": [
+          {
+            "id": 1,
+            "name": "S1",
+            "title": "S1",
+            "type": "2d",
+            "imgParam": {},
+            "imagePosition": "FILL",
+            "extent": {
+              "spatialReference": {
+                "wkid": 102100
+              },
+              "xmin": -12536200.860945,
+              "ymin": 5281238.379199999,
+              "xmax": -12509167.199355,
+              "ymax": 5310802.5294
+            },
+            "graphics": [],
+            "showFlag": true,
+            "mapDataSourceId": null,
+            "viewpoint": {
+              "rotation": 0,
+              "targetGeometry": {
+                "spatialReference": {
+                  "wkid": 102100
+                },
+                "xmin": -12536200.860945,
+                "ymin": 5281238.379199999,
+                "xmax": -12509167.199355,
+                "ymax": 5310802.5294
+              }
+            },
+            "description": "S1 Portneuf"
+          },
+          {
+            "id": 2,
+            "name": "S2",
+            "title": "S2",
+            "type": "2d",
+            "imgParam": {},
+            "imagePosition": "FILL",
+            "extent": {
+              "spatialReference": {
+                "wkid": 102100
+              },
+              "xmin": -12575119.89247,
+              "ymin": 5271435.2493199995,
+              "xmax": -12527538.878729999,
+              "ymax": 5329173.45088
+            },
+            "graphics": [],
+            "showFlag": true,
+            "mapDataSourceId": null,
+            "viewpoint": {
+              "rotation": 0,
+              "targetGeometry": {
+                "spatialReference": {
+                  "wkid": 102100
+                },
+                "xmin": -12575119.89247,
+                "ymin": 5271435.2493199995,
+                "xmax": -12527538.878729999,
+                "ymax": 5329173.45088
+              }
+            },
+            "description": "S2 AF Reservoir"
+          },
+          {
+            "id": 3,
+            "name": "S3",
+            "title": "S3",
+            "type": "2d",
+            "imgParam": {},
+            "imagePosition": "FILL",
+            "extent": {
+              "spatialReference": {
+                "wkid": 102100
+              },
+              "xmin": -12624185.93911,
+              "ymin": 5242461.4995099995,
+              "xmax": -12555089.67369,
+              "ymax": 5282854.99889
+            },
+            "graphics": [],
+            "showFlag": true,
+            "mapDataSourceId": null,
+            "viewpoint": {
+              "rotation": 0,
+              "targetGeometry": {
+                "spatialReference": {
+                  "wkid": 102100
+                },
+                "xmin": -12624185.93911,
+                "ymin": 5242461.4995099995,
+                "xmax": -12555089.67369,
+                "ymax": 5282854.99889
+              }
+            },
+            "description": "S3 AF Dam-Minidoka"
+          },
+          {
+            "id": 4,
+            "name": "S4",
+            "title": "S4",
+            "type": "2d",
+            "imgParam": {},
+            "imagePosition": "FILL",
+            "extent": {
+              "spatialReference": {
+                "wkid": 102100
+              },
+              "xmin": -12675108.854985,
+              "ymin": 5229449.95768,
+              "xmax": -12608564.382315,
+              "ymax": 5270956.85532
+            },
+            "graphics": [],
+            "showFlag": true,
+            "mapDataSourceId": null,
+            "viewpoint": {
+              "rotation": 0,
+              "targetGeometry": {
+                "spatialReference": {
+                  "wkid": 102100
+                },
+                "xmin": -12675108.854985,
+                "ymin": 5229449.95768,
+                "xmax": -12608564.382315,
+                "ymax": 5270956.85532
+              }
+            },
+            "description": "S4 Walcott-Burley"
+          },
+          {
+            "id": 5,
+            "name": "S5",
+            "title": "S5",
+            "type": "2d",
+            "imgParam": {},
+            "imagePosition": "FILL",
+            "extent": {
+              "spatialReference": {
+                "wkid": 102100
+              },
+              "xmin": -12733337.540599998,
+              "ymin": 5218161.80708,
+              "xmax": -12658671.208600001,
+              "ymax": 5263296.89552
+            },
+            "graphics": [],
+            "showFlag": true,
+            "mapDataSourceId": null,
+            "viewpoint": {
+              "rotation": 0,
+              "targetGeometry": {
+                "spatialReference": {
+                  "wkid": 102100
+                },
+                "xmin": -12733337.540599998,
+                "ymin": 5218161.80708,
+                "xmax": -12658671.208600001,
+                "ymax": 5263296.89552
+              }
+            },
+            "description": "S5 Burley-Hansen"
+          }
+        ],
+        "autoPlayAllow": false,
+        "direction": "HORIZON",
+        "pageStyle": "SCROLL",
+        "space": 4,
+        "displayFromWeb": false,
+        "ignoreLayerVisibility": true,
+        "displayType": "ALL",
+        "itemWidth": 44,
+        "itemHeight": 40,
+        "scrollBarOpen": false,
+        "navigatorOpen": false,
+        "hideIcon": true,
+        "itemSizeType": "CUSTOM",
+        "galleryItemWidth": 48,
+        "galleryItemHeight": 44,
+        "galleryItemSpace": 4,
+        "displayName": true
+      },
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_18": {
+      "id": "widget_18",
+      "uri": "widgets/common/image/",
+      "version": "1.20.0",
+      "label": "WRI Logo",
+      "config": {
+        "functionConfig": {
+          "altText": "WRI Environmental",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/wri_logo.png",
+            "fileName": "wri_logo.png",
+            "type": "IMAGE"
+          },
+          "imageFillMode": "FIT",
+          "imageDisplayQualityMode": "ORIGINAL"
+        },
+        "styleConfig": {}
+      }
+    },
+    "widget_19": {
+      "id": "widget_19",
+      "uri": "widgets/common/text/",
+      "version": "1.20.0",
+      "label": "App Title",
+      "config": {
+        "text": "<p style=\"margin: 0px;\"><strong style=\"color: rgb(255, 255, 255); font-size: 22px;\">Snake River Geographic Response Plan: Pocatello-Hansen</strong></p>",
+        "placeholder": "",
+        "style": {
+          "verticalAlign": "center",
+          "wrap": false,
+          "overflow": "hidden",
+          "padding": "p-0"
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "attributes": {
+    "portalUrl": "https://wrienviro.maps.arcgis.com"
+  },
+  "header": {
+    "layout": {
+      "LARGE": "layout_hdr",
+      "MEDIUM": "layout_hdr",
+      "SMALL": "layout_hdr"
+    },
+    "height": {
+      "LARGE": 67,
+      "SMALL": 56
+    },
+    "backgroundColor": "#1f1f1f",
+    "textColor": "#fff"
+  },
+  "sharedThemeVariables": {},
+  "timestamp": 1783826097789
+}
